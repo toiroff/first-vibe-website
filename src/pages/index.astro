@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+---
+
+<BaseLayout
+  title="Pete McPherson — Home"
+  description="[PLACEHOLDER] Learn about Pete McPherson, his background, accomplishments, and current projects. Join the weekly newsletter."
+  currentPath="/"
+>
+  <!-- Hero -->
+  <section class="section-padding border-b border-black/10">
+    <div class="content-container">
+      <p class="mb-4 font-heading text-sm uppercase tracking-[0.3em] text-accent">
+        [PLACEHOLDER] Welcome
+      </p>
+      <h1 class="mb-6 max-w-3xl font-heading text-4xl uppercase leading-none tracking-wide text-black md:text-6xl lg:text-7xl">
+        [PLACEHOLDER] Pete McPherson
+      </h1>
+      <p class="mb-12 max-w-xl text-lg leading-relaxed text-black/70 md:text-xl">
+        [PLACEHOLDER] Entrepreneur, creator, and educator helping people build meaningful work online.
+      </p>
+
+      <NewsletterForm
+        heading="Get Pete's Weekly Newsletter"
+        description="[PLACEHOLDER] Join thousands of readers. One email per week — no spam, ever."
+      />
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section-padding">
+    <div class="content-container">
+      <h2 class="mb-6 font-heading text-2xl uppercase tracking-wide text-black md:text-3xl">
+        [PLACEHOLDER] What I Do
+      </h2>
+      <p class="mb-6 max-w-2xl text-base leading-relaxed text-black/70 md:text-lg">
+        [PLACEHOLDER] Brief introduction about Pete's work, mission, and what visitors can expect from this site. Replace this paragraph with real content about background, focus areas, and current priorities.
+      </p>
+      <p class="mb-10 max-w-2xl text-base leading-relaxed text-black/70 md:text-lg">
+        [PLACEHOLDER] Second paragraph with more context — accomplishments, philosophy, or a hook that encourages exploration of projects and the newsletter.
+      </p>
+      <a href="/projects" class="btn-secondary">
+        View Projects
+      </a>
+    </div>
+  </section>
+</BaseLayout>

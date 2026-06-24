@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none">
+  <rect width="640" height="400" fill="#f5f5f5"/>
+  <rect x="240" y="140" width="160" height="120" stroke="#000000" stroke-width="2" fill="none"/>
+  <circle cx="290" cy="180" r="20" stroke="#E10600" stroke-width="2" fill="none"/>
+  <path d="M240 260 L320 200 L400 260" stroke="#000000" stroke-width="2" fill="none"/>
+  <text x="320" y="340" text-anchor="middle" fill="#999999" font-family="Arial, sans-serif" font-size="14">[PLACEHOLDER] Project Image</text>
+</svg>

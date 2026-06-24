@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+
+const projects = [
+  {
+    title: '[PLACEHOLDER] Project One',
+    description:
+      '[PLACEHOLDER] Short description of the first project. Explain what it is, who it serves, and why it matters. Pete will replace this with real details.',
+    href: '#',
+    imageAlt: '[PLACEHOLDER] Preview of Project One',
+  },
+  {
+    title: '[PLACEHOLDER] Project Two',
+    description:
+      '[PLACEHOLDER] Short description of the second project. Highlight the problem it solves or the value it creates for its audience.',
+    href: '#',
+    imageAlt: '[PLACEHOLDER] Preview of Project Two',
+  },
+  {
+    title: '[PLACEHOLDER] Project Three',
+    description:
+      '[PLACEHOLDER] Short description of the third project. Include a compelling one-liner that makes visitors want to learn more.',
+    href: '#',
+    imageAlt: '[PLACEHOLDER] Preview of Project Three',
+  },
+  {
+    title: '[PLACEHOLDER] Project Four',
+    description:
+      '[PLACEHOLDER] Short description of the fourth project. This could be a podcast, course, community, or product — replace with real info.',
+    href: '#',
+    imageAlt: '[PLACEHOLDER] Preview of Project Four',
+  },
+  {
+    title: '[PLACEHOLDER] Project Five',
+    description:
+      '[PLACEHOLDER] Short description of the fifth project. Keep it concise and scannable for the projects grid layout.',
+    href: '#',
+    imageAlt: '[PLACEHOLDER] Preview of Project Five',
+  },
+  {
+    title: '[PLACEHOLDER] Project Six',
+    description:
+      '[PLACEHOLDER] Short description of the sixth project. Add or remove cards as needed when Pete updates this page.',
+    href: '#',
+    imageAlt: '[PLACEHOLDER] Preview of Project Six',
+  },
+];
+---
+
+<BaseLayout
+  title="Projects — Pete McPherson"
+  description="[PLACEHOLDER] Explore Pete McPherson's current projects — products, content, and ventures. Subscribe to the newsletter for updates."
+  currentPath="/projects"
+>
+  <section class="section-padding border-b border-black/10">
+    <div class="content-container">
+      <p class="mb-4 font-heading text-sm uppercase tracking-[0.3em] text-accent">
+        [PLACEHOLDER] Work
+      </p>
+      <h1 class="mb-4 font-heading text-4xl uppercase tracking-wide text-black md:text-5xl lg:text-6xl">
+        [PLACEHOLDER] Projects
+      </h1>
+      <p class="mb-12 max-w-2xl text-base leading-relaxed text-black/70 md:text-lg">
+        [PLACEHOLDER] A selection of current and past projects. Replace these cards with real titles, descriptions, links, and images.
+      </p>
+
+      <ul class="grid list-none gap-8 sm:grid-cols-2 lg:grid-cols-3" role="list">
+        {
+          projects.map((project) => (
+            <li>
+              <ProjectCard
+                title={project.title}
+                description={project.description}
+                href={project.href}
+                imageAlt={project.imageAlt}
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <NewsletterForm
+      heading="Follow Along"
+      description="[PLACEHOLDER] Get notified when Pete launches something new. Join the newsletter for project updates and behind-the-scenes insights."
+    />
+  </section>
+</BaseLayout>

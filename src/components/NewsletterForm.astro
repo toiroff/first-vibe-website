@@ -1,0 +1,54 @@
+---
+interface Props {
+  id?: string;
+  heading?: string;
+  description?: string;
+  class?: string;
+}
+
+const {
+  id = 'newsletter',
+  heading = 'Join the Newsletter',
+  description = '[PLACEHOLDER] Get weekly insights from Pete McPherson — straight to your inbox.',
+  class: className = '',
+} = Astro.props;
+---
+
+<section
+  id={id}
+  class:list={['content-container', className]}
+  aria-labelledby={`${id}-heading`}
+>
+  <div class="border-2 border-black bg-white p-8 md:p-12">
+    <h2
+      id={`${id}-heading`}
+      class="mb-3 font-heading text-2xl uppercase tracking-wide text-black md:text-3xl"
+    >
+      {heading}
+    </h2>
+    <p class="mb-8 max-w-xl text-base leading-relaxed text-black/70">
+      {description}
+    </p>
+
+    <form
+      class="flex flex-col gap-4 sm:flex-row sm:items-stretch"
+      action="#"
+      method="post"
+      aria-label="Newsletter signup"
+    >
+      <label for={`${id}-email`} class="sr-only">Email address</label>
+      <input
+        type="email"
+        id={`${id}-email`}
+        name="email"
+        required
+        autocomplete="email"
+        placeholder="you@example.com"
+        class="min-w-0 flex-1 border-2 border-black bg-white px-4 py-3 font-body text-base text-black placeholder:text-black/40 focus:border-accent focus:outline-none"
+      />
+      <button type="submit" class="btn-primary shrink-0 px-8">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</section>
