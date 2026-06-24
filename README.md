@@ -1,4 +1,4 @@
-# Pete McPherson — Portfolio Site
+# Muhammadumar Toirov — Portfolio Site
 
 A fast, minimal portfolio website built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com). Designed to introduce Pete McPherson, showcase projects, and drive newsletter signups.
 
@@ -145,4 +145,4 @@ The newsletter form is a styled frontend placeholder. To connect it to a service
 
 ## License
 
-Private — © Pete McPherson
+Private — © Umar Toirov
